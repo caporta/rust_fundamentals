@@ -3,6 +3,7 @@ mod operators;
 mod scope_and_shadowing;
 mod constants;
 mod stack_and_heap;
+mod control_flow;
 
 fn main() {
     println!("======================\n");
@@ -20,5 +21,8 @@ fn main() {
     println!("\n======================\n");
     println!("STACK AND HEAP:\n");
     stack_and_heap::stack_and_heap();
+    println!("\n======================\n");
+    println!("CONTROL FLOW:\n");
+    control_flow::if_statement();
     println!("\n======================\n");
 }
