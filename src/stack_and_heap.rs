@@ -22,10 +22,10 @@ pub fn stack_and_heap() {
     let p1 = origin();
     let p2 = Box::new(origin());
 
-    println!("p1 ({} bytes)", mem::size_of_val(&p1));
-    println!("p2 ({} bytes)", mem::size_of_val(&p2));
+    println!("p1 ({} bytes)", mem::size_of_val(&p1)); // Point.x:f64 (8 bytes) + Point.y:f64 (8 bytes) = 16 bytes
+    println!("p2 ({} bytes)", mem::size_of_val(&p2)); // mem address only takes one block of memory on the os (8 bytes)
 
-    let p3 = *p2;
+    let p3 = *p2; // relocating p2 back to the stack (16 bytes)
     println!("p3 = {}", p3.x);
-    println!("p3 ({} bytes)", mem::size_of_val(&p3));
+    println!("p3 ({} bytes)", mem::size_of_val(&p3)); 
 }

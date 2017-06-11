@@ -29,7 +29,7 @@ pub fn operators() {
     // 01 or 10 = 11 === 3_10
     println!("1|2 = {}", c);
 
-    let two_to_ten = 1 << 10;
+    let two_to_ten = 1 << 10; // powers of two can be calculated bitwise
     println!("2^10 = {}", two_to_ten);
 
     // logical ( < > <= >= == )
