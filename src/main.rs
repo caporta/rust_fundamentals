@@ -4,6 +4,7 @@ mod scope_and_shadowing;
 mod constants;
 mod stack_and_heap;
 mod control_flow;
+mod data_structures;
 
 fn main() {
     println!("======================\n");
@@ -50,6 +51,16 @@ fn main() {
 
     println!("MATCH STATEMENT:\n");
     control_flow::match_statement();
+
+    println!("\n======================\n");
+
+    println!("STRUCTS:\n");
+    data_structures::structures();
+
+    println!("\n======================\n");
+
+    println!("ENUMERATIONS:\n");
+    data_structures::enums();
 
     println!("\n======================\n");
 }
