@@ -63,4 +63,9 @@ fn main() {
     data_structures::enums();
 
     println!("\n======================\n");
+
+    println!("OPTION:\n");
+    data_structures::option();
+
+    println!("\n======================\n");
 }
