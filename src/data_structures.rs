@@ -144,3 +144,11 @@ pub fn vectors() {
         println!("{}", x);
     }
 }
+
+// ==================== SUMMARY ==================== //
+
+// - A struct contains fields, its members are addressed via dot syntax
+// - Enumerations can be made up of distinct case values (memberless structs) as well as ordinary
+// structs or tuples
+// - Optional values via Option<T>; 'if let'/'while let' is smart enough to distinguish presence/absence
+// - Arrays and vectors store sets of values of the same type
