@@ -68,4 +68,14 @@ fn main() {
     data_structures::option();
 
     println!("\n======================\n");
+
+    println!("ARRAYS:\n");
+    data_structures::arrays();
+
+    println!("\n======================\n");
+
+    println!("VECTORS:\n");
+    data_structures::vectors();
+
+    println!("\n======================\n");
 }
