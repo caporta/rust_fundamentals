@@ -25,9 +25,9 @@ pub fn structures() {
 // ==================== ENUM ==================== //
 
 enum Color {
-    Red,
-    Green,
-    Blue,
+    Red, // "memberless struct"
+    Green, // "memberless struct"
+    Blue, // etc...
     RGBColor(u8, u8, u8), // tuple
     CmykColor{cyan:u8, magenta:u8, yellow:u8, black:u8}, // struct
 }
