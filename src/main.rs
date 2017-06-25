@@ -5,6 +5,7 @@ mod constants;
 mod stack_and_heap;
 mod control_flow;
 mod data_structures_1;
+mod data_structures_2;
 
 fn main() {
     println!("======================\n");
@@ -76,6 +77,16 @@ fn main() {
 
     println!("VECTORS:\n");
     data_structures_1::vectors();
+
+    println!("\n======================\n");
+
+    println!("SLICES:\n");
+    data_structures_2::slices();
+
+    println!("\n======================\n");
+
+    println!("STRINGS:\n");
+    data_structures_2::strings();
 
     println!("\n======================\n");
 }
