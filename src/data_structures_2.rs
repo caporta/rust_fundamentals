@@ -1,3 +1,5 @@
+// ==================== SLICES ==================== //
+
 fn use_slice(slice: &mut[i32]) { // &[i32] -> borrow a partition of [i32]
     println!("first elem: {}, length: {}", slice[0], slice.len());
     slice[0] = 4321;
@@ -10,6 +12,8 @@ pub fn slices() {
     use_slice(&mut data);
     println!("{:?}", data);
 }
+
+// ==================== STRINGS/&STRs ==================== //
 
 pub fn strings() {
     let s:&'static str = "Hello there!"; //vector of utf-8 characters, &str = "string slice"
@@ -52,4 +56,37 @@ pub fn strings() {
     abc.push_str("!!!");
     bcd.remove(0);
     println!("abc = {}, bcd = {}", abc, bcd.replace("ello", "goodbye"));
+}
+
+// ==================== TUPLES ==================== //
+
+// member elements can be of different types (unlike arrays)
+
+fn sum_and_product(x:i32, y:i32) -> (i32, i32) { //tuple
+    (x + y, x * y)
+}
+
+pub fn tuples() {
+    let x = 3;
+    let y = 4;
+
+    let sp = sum_and_product(x, y);
+    println!("sp = {:?}", sp);
+
+    println!("{0} + {1} = {2}, {0} * {1} = {3}", x, y, sp.0, sp.1); // dot notation accesses positions of tuples
+
+    // destructuring
+    let (a, b) = sp;
+    println!("a = {}, b = {}", a, b);
+
+    let sp2 = sum_and_product(4, 7);
+    let combined = (sp, sp2,); //tuple of tuples
+    println!("{:?}", combined);
+    println!("last element = {}", (combined.1).1); //use parens to evaluate top level tuple first
+
+    let ((c, d), (e, f)) = combined;
+    println!("{}, {}, {}, {}", c,d,e,f);
+
+    let meaning = (42,); // 1-elem tuple requires trailing comma. otherwise it's simply an int wrapped in noop parens
+    println!("{:?}", meaning);
 }

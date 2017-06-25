@@ -6,6 +6,7 @@ mod stack_and_heap;
 mod control_flow;
 mod data_structures_1;
 mod data_structures_2;
+mod pattern_matching;
 
 fn main() {
     println!("======================\n");
@@ -87,6 +88,16 @@ fn main() {
 
     println!("STRINGS:\n");
     data_structures_2::strings();
+
+    println!("\n======================\n");
+
+    println!("TUPLES:\n");
+    data_structures_2::tuples();
+
+    println!("\n======================\n");
+
+    println!("PATTERN MATCHING:\n");
+    pattern_matching::pattern_matching();
 
     println!("\n======================\n");
 }

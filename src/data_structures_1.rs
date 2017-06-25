@@ -72,6 +72,8 @@ pub fn option() {
 
 // ==================== ARRAYS ==================== //
 
+// member elements must be of the same type
+
 pub fn arrays() {
     let mut a:[i32;5] = [1,2,3,4,5];
     println!("a has {} elements, the first of which is {}", a.len(), a[0]);
