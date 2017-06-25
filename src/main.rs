@@ -4,7 +4,7 @@ mod scope_and_shadowing;
 mod constants;
 mod stack_and_heap;
 mod control_flow;
-mod data_structures;
+mod data_structures_1;
 
 fn main() {
     println!("======================\n");
@@ -55,27 +55,27 @@ fn main() {
     println!("\n======================\n");
 
     println!("STRUCTS:\n");
-    data_structures::structures();
+    data_structures_1::structures();
 
     println!("\n======================\n");
 
     println!("ENUMERATIONS:\n");
-    data_structures::enums();
+    data_structures_1::enums();
 
     println!("\n======================\n");
 
     println!("OPTION:\n");
-    data_structures::option();
+    data_structures_1::option();
 
     println!("\n======================\n");
 
     println!("ARRAYS:\n");
-    data_structures::arrays();
+    data_structures_1::arrays();
 
     println!("\n======================\n");
 
     println!("VECTORS:\n");
-    data_structures::vectors();
+    data_structures_1::vectors();
 
     println!("\n======================\n");
 }
