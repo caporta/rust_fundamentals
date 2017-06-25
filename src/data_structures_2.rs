@@ -90,3 +90,11 @@ pub fn tuples() {
     let meaning = (42,); // 1-elem tuple requires trailing comma. otherwise it's simply an int wrapped in noop parens
     println!("{:?}", meaning);
 }
+
+// ==================== SUMMARY ==================== //
+
+// - A slice is a part of an array; its size is not known in advance
+// - Rust has two types of strings: &'static str and String
+// - Tuples can be used to store several values of any distinct types; destructuring
+// - Match is extremely powerful
+// - Generics let you write type-agnostic containers and functions

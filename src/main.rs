@@ -7,6 +7,7 @@ mod control_flow;
 mod data_structures_1;
 mod data_structures_2;
 mod pattern_matching;
+mod generics;
 
 fn main() {
     println!("======================\n");
@@ -98,6 +99,11 @@ fn main() {
 
     println!("PATTERN MATCHING:\n");
     pattern_matching::pattern_matching();
+
+    println!("\n======================\n");
+
+    println!("GENERICS:\n");
+    generics::generics();
 
     println!("\n======================\n");
 }
