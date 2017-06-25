@@ -43,7 +43,8 @@ pub fn enums() {
         Color::Blue => println!("b"),
         Color::RGBColor(0,0,0) => println!("blk"),
         Color::RGBColor(r,g,b) => println!("rgb({},{},{})", r, g, b),
-        Color::CmykColor{cyan:_, magenta: _, yellow: _, black: _} => println!("blk"),
+        //Color::CmykColor{cyan:_, magenta: _, yellow: _, black: 255} => println!("blk"),
+        Color::CmykColor{black: 255, ..} => println!("black"), // shorthand for the line above
         _ => ()
     }
 }
